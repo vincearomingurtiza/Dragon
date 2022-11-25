@@ -1,0 +1,288 @@
+*{
+    margin: 0px;
+    
+    body{
+        #wrapper{
+            header{
+                align-items: center;
+                background-color: #000;
+                display: flex;
+                height: 100px;
+                justify-content: center;
+                text-align: center;
+                
+                a{
+                    color: #fff;
+                    font-size: 24px;
+                    letter-spacing: 2px;
+                    margin: 0px 50px;
+                    text-decoration: none;
+                    
+                    &:hover{
+                        color: #2FA8EC;
+                        transition: 0.21s;
+                    }
+                }
+
+                &:hover{
+                    background-color: #1E1E1E;
+                    transition: 0.21s;
+                }
+            }
+
+            #manami{
+                background-color: #E8E8E8;
+                text-align: center;
+                padding: 75px 0px 0px 0px;
+
+                h2{
+                    color: #43464C;
+                    font: normal 700 38px 'Helvetica Neue', sans-serif;
+                    letter-spacing: 0.6px;
+                    margin-bottom: 100px;
+                }
+
+                .container{
+                    div{
+                        position: relative;
+                        display: inline-block;
+                        vertical-align: top;
+                        margin: 0px 26px 100px 26px;
+
+                        // &#manami_username:focus ~ .manami_label{
+                        //     background-color: red !important;
+                        // }
+                        
+                        .manami_label{
+                            color: #696969;
+                            font: normal 200 28px 'Helvetica Neue', sans-serif;
+                            position: absolute;
+                            left: 0px;
+                            top: 20px;
+                            pointer-events: none;
+
+                            
+                        }
+                        
+                        input{
+                            background-color: transparent;
+                            border-bottom: solid 2px #A8A8A8;
+                            border-top: 0px;
+                            border-right: 0px;
+                            border-left: 0px;
+                            color: #fff;
+                            font: normal 200 28px 'Helvetica Neue', sans-serif;
+                            padding: 22px 0px 12px 14px;
+                            width: 375px;    
+                            overflow: visible;
+                            transition: 0.21s;
+                            
+                            &::placeholder{
+                                color: #696969;
+                                transition: 0.21s;
+                            }
+
+                            &:focus{
+                                outline: none;
+                                background-color: #A8A8A8;
+                            }
+
+                            // &:focus ~ label{
+                            //     color: red !important;
+                            // }
+                        }
+
+                        // label ~ input > &:focus{
+                        //     color: red !important;
+                        // }
+
+                        // input:focus ~ .manami_label{
+                        //     color: red!important;
+                        // }
+                    }
+
+                }
+                // div #manami_username:focus ~ .manami_label{
+                //     background-color: red !important;
+                //     top: 100px;
+                // }
+            }
+
+            #chisato{
+                background-color: #2F3238;
+                text-align: center;
+                padding: 75px 0px 0px 0px;
+
+                h2{
+                    color: #AAAAAA;
+                    font: normal 700 38px 'Helvetica Neue', sans-serif;
+                    letter-spacing: 0.6px;
+                    margin-bottom: 100px;
+                }
+
+                .container{
+                    div{
+                        position: relative;
+                        display: inline-block;
+                        vertical-align: top;
+                        margin: 0px 26px 100px 26px;
+
+                        label{
+                            color: #b5b5b5;
+                            font: normal 200 19px 'Helvetica Neue', sans-serif;
+                            position: absolute;
+                            top: 24px;
+                            left: 19px;
+                        }
+
+                        input{
+                            border: solid 2px #B5B5B5;
+                            background-color: transparent;
+                            color: #b5b5b5;
+                            font: normal 200 19px 'Helvetica Neue', sans-serif;
+                            padding: 22px 0px 22px 17px;
+                            width: 375px;    
+                            transition: 0.21s;
+                            
+                            &::placeholder{
+                                color: #b5b5b5;
+                            }
+    
+                            &:focus{
+                                outline: none;
+                                border: solid 2px #DA6484;
+                            }
+
+                            &:focus ~ #chisako_label_firstname{
+                                display: none;
+                            }
+                        }
+    
+                        .animation{
+                            margin: 50px 0px 50px 17px;
+                            background-color: red !important;
+                        }
+                    }
+                }
+            }
+
+            #yoshiko{
+                background-color: #F0EFEE;
+                text-align: center;
+                padding: 75px 0px 0px 0px;
+
+                h2{
+                    color: #AAAAAA;
+                    font: normal 700 38px 'Helvetica Neue', sans-serif;
+                    letter-spacing: 0.6px;
+                    margin-bottom: 100px;
+                }
+
+                .container{
+                    div{
+                        position: relative;
+                        display: inline-block;
+                        vertical-align: top;
+                        margin: 0px 26px 100px 26px;
+    
+                        input{
+                            background-color: #D0D1D0;
+                            border: none;
+                            color: #AAAAAA;
+                            font: normal 200 19px 'Helvetica Neue', sans-serif;
+                            padding: 27px 0px 25px 24px;
+                            width: 331px;    
+                            
+                            &::placeholder{
+                                color: #8B8C8B;
+                            }
+                        }
+                    }
+                }
+            }
+
+            #ruri{
+                background-color: #2F3238;
+                text-align: center;
+                padding: 75px 0px 0px 0px;
+
+                h2{
+                    color: #43464C;
+                    font: normal 700 38px 'Helvetica Neue', sans-serif;
+                    letter-spacing: 0.6px;
+                    margin-bottom: 100px;
+                }
+
+                .container{
+                    div{
+                        position: relative;
+                        display: inline-block;
+                        vertical-align: top;
+                        margin: 0px 26px 100px 26px;
+    
+                        input{
+                            background-color: transparent;
+                            border-bottom: solid 7px #B7C3AC;
+                            border-top: 0px;
+                            border-right: 0px;
+                            border-left: 0px;
+                            color: #9FCD98;
+                            font: normal 200 24px 'Helvetica Neue', sans-serif;
+                            padding: 22px 0px 6px 2px;
+                            width: 340px;    
+                            
+                            &::placeholder{
+                                color: #696969;
+                            }
+                        }
+                    }
+                }
+            }
+
+            #fumi{
+                background-color: #F0EFEE;
+                text-align: center;
+                padding: 75px 0px 0px 0px;
+
+                h2{
+                    color: #AAAAAA;
+                    font: normal 700 38px 'Helvetica Neue', sans-serif;
+                    letter-spacing: 0.6px;
+                    margin-bottom: 100px;
+                }
+
+                .container{
+                    div{
+                        position: relative;
+                        display: inline-block;
+                        vertical-align: top;
+                        margin: 0px 26px 100px 26px;
+    
+                        input{
+                            background-color: #FFFFFF;
+                            border: none;
+                            color: #696981;
+                            font: normal 200 19px 'Helvetica Neue', sans-serif;
+                            padding: 22px 0px 22px 17px;
+                            width: 340px;    
+                            
+                            &::placeholder{
+                                color: #696981;
+                            }
+
+                            &:focus{
+                                outline: none;
+                            }
+                        }
+                    }
+                }
+            } 
+
+            footer{
+                background-color: #1E1E1E;
+                height: 150px;
+            }
+        }
+    }
+}
+
