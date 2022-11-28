@@ -283,6 +283,17 @@
   position: relative;
   vertical-align: top;
 }
+* body #wrapper #fumi .container .input_block::after {
+  background-color: #F0F0F0;
+  /* #F0F0F0 */
+  content: "";
+  display: inline-block;
+  height: 61px;
+  left: 62px;
+  position: absolute;
+  top: 13px;
+  width: 1px;
+}
 * body #wrapper #fumi .container .input_block input {
   background-color: #FFFFFF;
   border: none;
@@ -306,15 +317,15 @@
   transition-delay: 0.18s;
   transition: 0.18s;
 }
-* body #wrapper #fumi .container .input_block input:focus ~ .visible_icon,
-* body #wrapper #fumi .container .input_block input:valid ~ .visible_icon {
-  top: -28px;
-  transition: 0.18s;
-}
 * body #wrapper #fumi .container .input_block input:focus ~ .hidden_icon,
 * body #wrapper #fumi .container .input_block input:valid ~ .hidden_icon {
   top: 32px;
   transition-delay: 0.18s;
+  transition: 0.18s;
+}
+* body #wrapper #fumi .container .input_block input:focus ~ .visible_icon,
+* body #wrapper #fumi .container .input_block input:valid ~ .visible_icon {
+  top: -28px;
   transition: 0.18s;
 }
 * body #wrapper #fumi .container .input_block label {

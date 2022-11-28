@@ -320,6 +320,17 @@
                         overflow: hidden;
                         position: relative;
                         vertical-align: top;
+
+                        &::after{
+                            background-color: #F0F0F0; /* #F0F0F0 */
+                            content: "";
+                            display: inline-block;
+                            height: 61px;
+                            left: 62px;
+                            position: absolute;
+                            top: 13px;
+                            width: 1px;
+                        }
     
                         input{
                             background-color: #FFFFFF;
@@ -344,14 +355,14 @@
                                 transition: 0.18s;
                             }
 
-                            &:focus ~ .visible_icon, &:valid ~ .visible_icon{
-                                top: -28px;
-                                transition: 0.18s;
-                            }
-                            
                             &:focus ~ .hidden_icon, &:valid ~ .hidden_icon{
                                 top: 32px;
                                 transition-delay: 0.18s;
+                                transition: 0.18s;
+                            }
+
+                            &:focus ~ .visible_icon, &:valid ~ .visible_icon{
+                                top: -28px;
                                 transition: 0.18s;
                             }
                         }
