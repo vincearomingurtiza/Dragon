@@ -219,7 +219,7 @@
   left: 14px;
   top: 14px;
 }
-* body #wrapper #juro .container .input_block.animation .juro_input {
+* body #wrapper #juro .container .input_block.animation input {
   background-color: #fff !important;
   margin: 35px 12px 0px 12px;
   padding: 13px 0px 14px 18px !important;
@@ -235,7 +235,7 @@
   transition: 0.21s;
   z-index: 1;
 }
-* body #wrapper #juro .container .input_block .juro_input {
+* body #wrapper #juro .container .input_block input {
   background-color: transparent;
   border: none;
   color: #595F6E;
@@ -244,7 +244,7 @@
   transition: 0.3s;
   width: 340px;
 }
-* body #wrapper #juro .container .input_block .juro_input:focus {
+* body #wrapper #juro .container .input_block input:focus {
   outline: none;
 }
 * body #wrapper #hideo {
@@ -266,13 +266,13 @@
   vertical-align: top;
   z-index: 0;
 }
-* body #wrapper #hideo .container .input_block.animation input {
-  margin-left: 0px !important;
-  width: 282px !important;
-}
 * body #wrapper #hideo .container .input_block.animation label {
   font-size: 14px;
   width: 58px !important;
+}
+* body #wrapper #hideo .container .input_block.animation input {
+  margin-left: 0px !important;
+  width: 282px !important;
 }
 * body #wrapper #hideo .container .input_block label {
   align-items: center;
@@ -300,14 +300,6 @@
 }
 * body #wrapper #hideo .container .input_block input:focus {
   outline: none;
-}
-* body #wrapper #hideo .container .input_block input::before {
-  background-color: #899DDA;
-  color: red;
-  content: "a";
-  display: inline-block;
-  height: 100px;
-  width: 100px;
 }
 * body #wrapper #madoka {
   background-color: #2F3238;
@@ -350,18 +342,6 @@
   transition: 0.18s;
   width: 3px;
 }
-* body #wrapper #madoka .container .input_block.zero_delay::before {
-  transition: 0.18s !important;
-  transition-delay: 0.18s !important;
-}
-* body #wrapper #madoka .container .input_block.zero_delay::after {
-  transition: 0.18s !important;
-  transition-delay: 0.34s !important;
-}
-* body #wrapper #madoka .container .input_block.zero_delay span {
-  transition: 0.18s !important;
-  transition-delay: 0s !important;
-}
 * body #wrapper #madoka .container .input_block.animation::before {
   width: 358px;
 }
@@ -374,6 +354,18 @@
 }
 * body #wrapper #madoka .container .input_block.animation span {
   height: 66px !important;
+}
+* body #wrapper #madoka .container .input_block.zero_delay::before {
+  transition: 0.18s !important;
+  transition-delay: 0.18s !important;
+}
+* body #wrapper #madoka .container .input_block.zero_delay::after {
+  transition: 0.18s !important;
+  transition-delay: 0.34s !important;
+}
+* body #wrapper #madoka .container .input_block.zero_delay span {
+  transition: 0.18s !important;
+  transition-delay: 0s !important;
 }
 * body #wrapper #madoka .container .input_block label {
   color: #7A7593;
@@ -410,4 +402,8 @@
 * body #wrapper footer {
   background-color: #1E1E1E;
   height: 150px;
+}
+* body #wrapper footer:hover {
+  background-color: #000;
+  transition: 0.21s;
 }

@@ -43,21 +43,11 @@
                 }
 
                 .container{
-                    div{
+                    .input_block{
                         display: inline-block;
                         margin: 0px 26px 100px 26px;
                         position: relative;
                         vertical-align: top;
-                        
-                        label{
-                            color: #696969;
-                            font: normal 200 28px 'Helvetica Neue', sans-serif;
-                            left: 0px;
-                            pointer-events: none;
-                            position: absolute;
-                            top: 20px;
-                            transition: 0.21s;
-                        }
                         
                         input{
                             background-color: transparent;
@@ -66,20 +56,30 @@
                             color: #fff;
                             font: normal 50 28px 'Helvetica Neue', sans-serif;
                             overflow: visible;
-                            padding: 22px 0px 12px 14px;
+                            padding: 11px 14px 12px 14px;
                             transition: 0.21s;
-                            width: 375px;    
+                            width: 322px;    
 
-                            &:focus{
+                            &:focus, &:valid{
                                 background-color: #A8A8A8;
                                 outline: none;
                             }
 
-                            &:focus ~ label, &:valid ~label{
+                            &:focus ~ label, &:valid ~ label{
                                 color: #CBC4C6 !important;
                                 font-size: 16px !important;
                                 top: 75px !important;
                             }
+                        }
+
+                        label{
+                            color: #696969;
+                            font: normal 200 25px 'Helvetica Neue', sans-serif;
+                            left: 0px;
+                            pointer-events: none;
+                            position: absolute;
+                            top: 20px;
+                            transition: 0.21s;
                         }
                     }
                 }
@@ -87,8 +87,8 @@
 
             #chisato{
                 background-color: #2F3238;
-                text-align: center;
                 padding: 75px 0px 0px 0px;
+                text-align: center;
 
                 h2{
                     color: #AAAAAA;
@@ -98,46 +98,65 @@
                 }
 
                 .container{
-                    div{
-                        position: relative;
+                    .input_block{
                         display: inline-block;
-                        vertical-align: top;
                         margin: 0px 26px 100px 26px;
+                        position: relative;
+                        vertical-align: top;          
+
+                        input{
+                            background-color: transparent;
+                            border: solid 2px #B5B5B5;
+                            color: #b5b5b5;
+                            font: normal 200 26px 'Helvetica Neue', sans-serif;
+                            padding: 19px 17px 20px 17px;
+                            transition: 0.3s;
+                            width: 312px;
+    
+                            &:focus, &:valid{
+                                border: solid 2px #DA6484;
+                                outline: none;
+                            }
+
+                            &:focus ~ label, &:valid ~ label{
+                                height: 0px;
+                                opacity: 0;
+                                padding-top: 80px;
+                                transition: 0.3s;
+                            }
+
+                            &:focus ~ span, &:valid ~ span{
+                                height: 30px;
+                                opacity: 1;
+                                transition: 0.3s;
+                            }
+                        }
 
                         label{
                             color: #b5b5b5;
                             font: normal 200 19px 'Helvetica Neue', sans-serif;
+                            height: 47px;
+                            left: 0px;
+                            margin-top: 0px;
+                            overflow: clip;
+                            padding: 49px 0px 0px 18px;
+                            pointer-events: none;
                             position: absolute;
-                            top: 24px;
-                            left: 19px;
+                            text-align: left;
+                            top: -24px;
+                            width: 200px;
                         }
 
-                        input{
-                            border: solid 2px #B5B5B5;
-                            background-color: transparent;
-                            color: #b5b5b5;
-                            font: normal 200 19px 'Helvetica Neue', sans-serif;
-                            padding: 23px 0px 24px 17px;
-                            width: 329px;    
-                            transition: 0.21s;
-                            
-                            &::placeholder{
-                                color: #b5b5b5;
-                            }
-    
-                            &:focus{
-                                outline: none;
-                                border: solid 2px #DA6484;
-                            }
-
-                            &:focus ~ #chisako_label_firstname{
-                                display: none;
-                            }
-                        }
-    
-                        .animation{
-                            margin: 50px 0px 50px 17px;
-                            background-color: red !important;
+                        span{
+                            color: #DA6484;
+                            font: normal 200 18px 'Helvetica Neue', sans-serif;
+                            height: 0px;
+                            left: 0px;
+                            opacity: 0;
+                            overflow: hidden;
+                            padding: 0px;
+                            position: absolute;
+                            top: -28px;
                         }
                     }
                 }
@@ -145,8 +164,8 @@
 
             #yoshiko{
                 background-color: #F0EFEE;
-                text-align: center;
                 padding: 75px 0px 0px 0px;
+                text-align: center;
 
                 h2{
                     color: #AAAAAA;
@@ -156,23 +175,70 @@
                 }
 
                 .container{
-                    div{
-                        position: relative;
+                    .input_block{
                         display: inline-block;
-                        vertical-align: top;
                         margin: 0px 26px 100px 26px;
+                        position: relative;
+                        vertical-align: top;
     
                         input{
                             background-color: #D0D1D0;
                             border: none;
+                            border: solid 2px #D0D1D0;
                             color: #AAAAAA;
-                            font: normal 200 19px 'Helvetica Neue', sans-serif;
-                            padding: 27px 0px 25px 24px;
-                            width: 331px;    
+                            font: normal 10 26px 'Helvetica Neue', sans-serif;
+                            padding: 19px 20px 21px 20px;
+                            transition: 0.21s;
+                            width: 306px;
                             
-                            &::placeholder{
-                                color: #8B8C8B;
+                            &:focus, &:valid{
+                                background-color: #fff;
+                                border: solid 2px #A3D39C;
+                                outline: none;
                             }
+
+                            &:focus ~ label, &:valid ~ label{
+                                height: 0px;
+                                opacity: 0;
+                                padding-top: 0px;
+                            }
+
+                            &:focus ~ span, &:valid ~ span{
+                                height: 16px;
+                                opacity: 1;
+                                top: -28px;
+                            }
+                        }
+
+                        label{
+                            color: #AAAAAA;
+                            font: normal 10 18px 'Helvetica Neue', sans-serif;
+                            height: 20px;
+                            left: 23px;
+                            margin-bottom: 0px;
+                            margin-top: 0px;
+                            overflow: hidden;
+                            padding-bottom: 0px;
+                            padding-top: 28px;
+                            pointer-events: none;
+                            position: absolute;
+                            top: -1px;
+                            transition: 0.3s;
+                        }
+
+                        span{
+                            color: #A3D39C;
+                            font: normal 700 16px 'Helvetica Neue', sans-serif;
+                            height: 4px;
+                            left: 21px;
+                            opacity: 0;
+                            overflow: hidden;
+                            padding-top: 0px;
+                            pointer-events: none;
+                            position: absolute;
+                            text-transform: uppercase;
+                            top: -16px;
+                            transition: 0.21s;
                         }
                     }
                 }
@@ -180,8 +246,8 @@
 
             #ruri{
                 background-color: #2F3238;
-                text-align: center;
                 padding: 75px 0px 0px 0px;
+                text-align: center;
 
                 h2{
                     color: #43464C;
@@ -191,26 +257,45 @@
                 }
 
                 .container{
-                    div{
-                        position: relative;
+                    .input_block{
                         display: inline-block;
-                        vertical-align: top;
                         margin: 0px 26px 100px 26px;
+                        position: relative;
+                        vertical-align: top;
     
                         input{
                             background-color: transparent;
                             border-bottom: solid 7px #B7C3AC;
-                            border-top: 0px;
-                            border-right: 0px;
                             border-left: 0px;
-                            color: #9FCD98;
-                            font: normal 200 24px 'Helvetica Neue', sans-serif;
-                            padding: 22px 0px 6px 2px;
-                            width: 340px;    
+                            border-right: 0px;
+                            border-top: 0px;
+                            color: #fff;
+                            font: normal 200 26px 'Helvetica Neue', sans-serif;
+                            padding: 22px 0px 7px 2px;
+                            transition: 0.3s;
+                            width: 340px;
                             
-                            &::placeholder{
-                                color: #696969;
+                            &:focus, &:valid{
+                                border-bottom: solid 2px #A3D39C;
+                                outline: none;
+                                padding-top: 27px !important;
                             }
+
+                            &:focus ~ label, &:valid ~ label{
+                                color: #A3D39C;
+                                font-size: 16px;
+                                top: 75px;
+                            }
+                        }
+
+                        label{
+                            color: #757575;
+                            font: normal 200 24px 'Helvetica Neue', sans-serif;
+                            left: 0px;
+                            pointer-events: none;
+                            position: absolute;
+                            top: 26px;
+                            transition: 0.3s;
                         }
                     }
                 }
@@ -218,8 +303,8 @@
 
             #fumi{
                 background-color: #F0EFEE;
-                text-align: center;
                 padding: 75px 0px 0px 0px;
+                text-align: center;
 
                 h2{
                     color: #AAAAAA;
@@ -229,27 +314,84 @@
                 }
 
                 .container{
-                    div{
-                        position: relative;
+                    .input_block{
                         display: inline-block;
-                        vertical-align: top;
                         margin: 0px 26px 100px 26px;
+                        overflow: hidden;
+                        position: relative;
+                        vertical-align: top;
     
                         input{
                             background-color: #FFFFFF;
                             border: none;
-                            color: #696981;
-                            font: normal 200 19px 'Helvetica Neue', sans-serif;
-                            padding: 22px 0px 22px 17px;
-                            width: 340px;    
-                            
-                            &::placeholder{
-                                color: #696981;
-                            }
+                            color: #00AEEF;
+                            font: normal 10 26px 'Helvetica Neue', sans-serif;
+                            padding: 43px 26px 13px 78px;
+                            width: 246px;
 
-                            &:focus{
+                            &:focus, &:valid{
                                 outline: none;
                             }
+
+                            &:focus ~ label, &:valid ~ label{
+                                padding-top: 50px;
+                                transition: 0.18s;
+                            }
+
+                            &:focus ~ span, &:valid ~ span{
+                                top: 11px;
+                                transition-delay: 0.18s;
+                                transition: 0.18s;
+                            }
+
+                            &:focus ~ .visible_icon, &:valid ~ .visible_icon{
+                                top: -28px;
+                                transition: 0.18s;
+                            }
+                            
+                            &:focus ~ .hidden_icon, &:valid ~ .hidden_icon{
+                                top: 32px;
+                                transition-delay: 0.18s;
+                                transition: 0.18s;
+                            }
+                        }
+
+                        label{
+                            color: #696969;
+                            font: normal 10 18px 'Helvetica Neue', sans-serif;
+                            left: 80px;
+                            pointer-events: none;
+                            position: absolute;
+                            top: 36px;
+                        }
+
+                        span{
+                            color: #ddd;
+                            font: normal 10 15px 'Helvetica Neue', sans-serif;
+                            left: 80px;
+                            pointer-events: none;
+                            position: absolute;
+                            top: -20px;
+                        }
+
+                        .visible_icon{
+                            color: #DDDDDD;
+                            display: inline-block;
+                            font-size: 27px;
+                            height: 20px;
+                            left: 18px;
+                            position: absolute;
+                            top: 32px;
+                            width: 20px;
+                        }
+
+                        .hidden_icon{
+                            color: #00AEEF;
+                            display: inline-block;
+                            font-size: 27px;
+                            left: 18px;
+                            position: absolute;
+                            top: 87px;
                         }
                     }
                 }
@@ -258,6 +400,11 @@
             footer{
                 background-color: #1E1E1E;
                 height: 150px;
+
+                &:hover{
+                    background-color: #000;
+                    transition: 0.21s;
+                }
             }
         }
     }

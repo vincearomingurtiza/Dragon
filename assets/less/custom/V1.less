@@ -268,7 +268,7 @@
                                 top: 14px;
                             }
 
-                            .juro_input{
+                            input{
                                 background-color: #fff !important;
                                 margin: 35px 12px 0px 12px;
                                 padding: 13px 0px 14px 18px !important;
@@ -287,7 +287,7 @@
                             z-index: 1;
                         }
         
-                        .juro_input{
+                        input{
                             background-color: transparent;
                             border: none;
                             color: #595F6E;
@@ -326,14 +326,14 @@
                         z-index: 0;
 
                         &.animation{
-                            input{
-                                margin-left: 0px !important;
-                                width: 282px !important;
-                            }
-                                
                             label{
                                 font-size: 14px;
                                 width: 58px !important;
+                            }
+                            
+                            input{
+                                margin-left: 0px !important;
+                                width: 282px !important;
                             }
                         }
 
@@ -365,15 +365,6 @@
 
                             &:focus{
                                 outline: none;
-                            }
-
-                            &::before{
-                                background-color: #899DDA;
-                                color: red;
-                                content: "a";
-                                display: inline-block;
-                                height: 100px;
-                                width: 100px;
                             }
                         }
                     }
@@ -425,23 +416,6 @@
                             width: 3px;
                         }
 
-                        &.zero_delay{
-                            &::before{
-                                transition: 0.18s !important;
-                                transition-delay: 0.18s !important;
-                            }
-
-                            &::after{
-                                transition: 0.18s !important;
-                                transition-delay: 0.34s !important;
-                            }
-
-                            span{
-                                transition: 0.18s !important;
-                                transition-delay: 0s !important;
-                            }
-                        }
-                        
                         &.animation{
                             &::before{
                                 width: 358px;
@@ -461,6 +435,22 @@
                             }
                         }
 
+                        &.zero_delay{
+                            &::before{
+                                transition: 0.18s !important;
+                                transition-delay: 0.18s !important;
+                            }
+
+                            &::after{
+                                transition: 0.18s !important;
+                                transition-delay: 0.34s !important;
+                            }
+
+                            span{
+                                transition: 0.18s !important;
+                                transition-delay: 0s !important;
+                            }
+                        }
 
                         label{
                             color: #7A7593;
@@ -504,6 +494,11 @@
             footer{
                 background-color: #1E1E1E;
                 height: 150px;
+
+                &:hover{
+                    background-color: #000;
+                    transition: 0.21s;
+                }
             }
         }
     }
